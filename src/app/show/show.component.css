@@ -1,0 +1,18 @@
+.show__wrap{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.show-content{
+  width:22%;
+  margin:10px auto;
+}
+
+@media screen and (max-width: 750px){
+  .show-content{
+    width:90%;
+    margin:10px auto;
+  }
+
+}

@@ -1,35 +1,105 @@
 
-<input type="checkbox" class="check push" id="checked-push">
-
-<label class="switch push" for="checked-push"></label>
-<div class="gatefold">
 	<header class="header">
-		<h1>ヘッダー</h1>
-	</header>
-	<main class="contents">
-		<section class="contents__inner">
-
-          <div class="example-button-row" style="width:100vw;text-align: center;">
-            <div>
-              <button mat-raised-button color="primary" style="margin: 20px;">地域グループへ行く！</button>
+		<h1>ゼロ高祭</h1>
+  </header>
+  <p class="">Which Do you Go?</p>
+  <main class="contents">
+    <div class="container">
+      <section class="contents__inner">
+        <div class="doors">
+          <div class="doors-flex">
+            <div class="doors__main">
+              <a href="/#floors__main">
+                <img src="../../../assets/images/door-main.png" alt="">
+              </a>
             </div>
-            <div>
-              <button mat-raised-button color="accent" style="margin: 20px;">schedule</button>
+            <div class="doors__contents">
+              <a href="#floors__contents">
+                <img src="../../../assets/images/door-content.jpg" alt="">
+              </a>
             </div>
-            <div>
-              <button mat-raised-button color="warn" style="margin: 20px;">展示室へGo!</button>
+            <div class="doors__show">
+              <a href="#floors__show">
+                <img src="../../../assets/images/door-show.png" alt="">
+              </a>
             </div>
-            <div>
-              <button mat-raised-button  style="margin: 20px;">グッズ販売会場へGo!</button>
+            <div class="doors__Introduction">
+              <a href="#floors__Introduction">
+                <img src="../../../assets/images/door-introduction.png" alt="">
+              </a>
             </div>
-
-
-            <div>
+            <div class="doors__game">
+              <a href="#floors__game">
+                <img src="../../../assets/images/door-game.jpg" alt="">
+              </a>
+            </div>
+            <div class="doors__buy">
+              <a href="#floors__buy">
+                <img src="../../../assets/images/door-shop.jpg" alt="">
+              </a>
             </div>
           </div>
-		</section>
-	</main>
+        </div>
+
+          <div class="time">
+            <img src="../../../assets/images/time.jpg" alt="">
+          </div>
+
+
+
+        <div class="floors">
+          <div class="floor__container">
+            <div class="floors__main" id="floors__main">
+                <app-fmain id="fmain"></app-fmain>
+            </div>
+            <div class="floors__main-title">
+              <p class="">メイン会場</p>
+            </div>
+          </div>
+          <div class="floor__container">
+            <div class="floors__contents" id="floors__contents">
+                <app-fcontents id="fcontents"></app-fcontents>
+            </div>
+            <div class="floors__contents-title">
+              <p class="">コンテンツ会場</p>
+            </div>
+          </div>
+          <div class="floor__container">
+            <div class="floors__show" id="floors__show">
+              <app-fshow id="fshow"></app-fshow>
+            </div>
+            <div class="flors__show-title">
+              <p class="">展示会場</p>
+            </div>
+          </div>
+          <div class="floor__container">
+            <div class="floors__Introduction" id="floors__Introduction">
+              <app-fintroduction id="fintroduction"></app-fintroduction>
+            </div>
+            <div class="floors__Introduction-title">
+              <p class="">生徒紹介</p>
+            </div>
+          </div>
+          <div class="floor__container">
+            <div class="floors__game" id="floors__game">
+              <app-fgame id="fgame"></app-fgame>
+            </div>
+            <div class="floors__game-title">
+              <p class="">ゲーム会場</p>
+            </div>
+          </div>
+          <div class="floor__container">
+            <div class="floors__buy" id="floors__buy">
+              <app-fshop id="fshop"></app-fshop>
+            </div>
+            <div class="floors__buy-title">
+              <p class="">購買部</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+   </main>
 	<footer class="footer">
 		<p>フッター</p>
 	</footer>
-</div>

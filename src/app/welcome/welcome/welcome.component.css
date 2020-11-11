@@ -1,3 +1,32 @@
+/*time*/
+.time{
+  width:100%;
+}
+.time img{
+  width:100%;
+}
+
+/*h1*/
+h1 {
+  position: relative;
+  padding: 0.35em 0.5em;
+  background: #b6e9ff;
+  color: #393939;
+}
+h1:before {
+  content: " ";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: -webkit-calc(100% - 16px);
+  width: calc(100% - 16px);
+  height: 0;
+  border: solid 8px transparent;
+  border-bottom-color: #b2ddf0;
+}
+
+
+
 /* gatefold */
 .gatefold {
 	width: 100%;
@@ -11,7 +40,7 @@
 	top: 0;
 	width: 100%;
 	height: 100vh;
-	background: url(../../../assets/images/door012.png) top center no-repeat;
+	background: url(../../../assets/images/door013.png) top center no-repeat;
 	background-size: cover;
 	-webkit-transition: all 1s;
 	transition: all 1s;
@@ -32,7 +61,7 @@
 .header,
 .contents,
 .footer {
-	max-width: 1000px;
+	width:100%;
 	margin: 0 auto;
 	padding: 80px 0;
 	text-align: center;
@@ -44,12 +73,10 @@
 
 .contents__inner {
 	box-sizing: border-box;
-	max-width: 680px;
 	height: 100%;
 	margin: 40px auto 0;
 	padding: 20px;
 	text-align: left;
-	background: #eee;
 }
 
 .contents__inner h2 {
@@ -109,10 +136,10 @@
 }
 
 .switch.fade {
-	top: 30%;
+	top: 10%;
 }
 .switch.fade::before {
-	content: 'fade';
+	content: 'Ready?';
 	-webkit-transition: all .5s;
 	transition: all .5s;
 }
@@ -134,13 +161,15 @@
 	-webkit-transition: all .5s;
 	transition: all .5s;
 }
-
 .check.slide:checked ~ .switch.slide::before,
 .check.fade:checked ~ .switch.fade::before,
 .check.push:checked ~ .switch.push::before,
 .check.pull:checked ~ .switch.pull::before {
 	content: 'close';
-	opacity: .3;
+  opacity: 0;
+  font-size:1px;
+
+
 }
 .check.slide:checked ~ .switch.push,
 .check.slide:checked ~ .switch.fade,
@@ -207,4 +236,157 @@
 .check.pull:checked ~ .gatefold::after {
 	-webkit-transform: perspective(1500px) rotateY(80deg);
 	transform: perspective(1500px) rotateY(80deg);
+}
+
+
+/*section*/
+.container{
+  width:100%;
+}
+/*section==>doors*/
+.doors img{
+  width: 108px;
+  height:216px;
+  margin:24px auto;
+}
+.doors{
+  margin:24px 0px;
+}
+.doors-flex{
+  display: flex;
+  width:100%;
+  flex-wrap: wrap;
+}
+.doors__main{
+  width:30%;
+  margin:0 auto;
+  text-align: center;
+}
+.doors__contents{
+  width:30%;
+  margin:16px auto 0 auto;
+  text-align: left;
+  margin-top:16px;
+}
+.doors__show{
+  width:30%;
+  margin:-32px auto 0 auto ;
+  text-align: right;
+
+}
+.doors__Introduction{
+  width:30%;
+  margin:16px auto 0 auto;
+  text-align: center;
+
+}
+.doors__game{
+  width:30%;
+  margin:0 auto;
+  text-align: right;
+}
+.doors__buy{
+    width:30%;
+    margin:-16px  auto 0 auto;
+}
+
+.floors{
+  margin: 24px 0px;
+  flex-wrap: wrap;
+}
+.floors img{
+  height: 216px;
+  width: 108px;
+}
+.floor__container {
+  display: flex;
+  border-radius: 30px;
+  margin:20px;
+  border: solid 3px tan;
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.5);
+}
+.floors__main{
+  width:50%;
+  text-align: center;
+}
+.floors__contents{
+  width:50%;
+  text-align: center;
+}
+.floors__show{
+  width:50%;
+  text-align: center;
+}
+.floors__Introduction{
+  width:50%;
+  text-align: center;
+}
+.floors__game{
+  width:50%;
+  text-align: center;
+}
+.floors__buy{
+  width:50%;
+  text-align: center;
+}
+
+
+.floors__main-title{
+  width:50%;
+}
+.floors__contents-title{
+  width:50%;
+
+}
+.floors__show-title{
+  width:50%;
+
+}
+.floors__Introduction-title{
+  width:50%;
+
+}
+.floors__game-title{
+  width:50%;
+
+}
+.floors__buy-title{
+  width:50%;
+
+}
+
+
+@media screen and (max-width: 750px){
+
+  .doors__main{
+    width:33%;
+    margin:0 auto;
+    text-align: center;
+  }
+  .doors__contents{
+    width:33%;
+    margin:16px 20px 0 20px;
+    text-align: left;
+  }
+  .doors__show{
+    width:33%;
+    margin:-32px 10px 0 10px;
+    text-align: right;
+
+  }
+  .doors__Introduction{
+    width:33%;
+    margin:16px 10px 0 10px;
+    text-align: center;
+
+  }
+  .doors__game{
+    width:33%;
+    margin:0 auto;
+    text-align: right;
+  }
+  .doors__buy{
+      width:33%;
+      margin:-16px  auto 0 auto;
+  }
 }
